@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Generador de <br /><span>Contraseñas Aleatorias</span></h1>
+      <div class="display">
+        <input type="text" id="password" placeholder="Contraseña" readonly />
+        <div id="copy-icon-container">
+        <img
+            id="copy-icon"
+          src="/assets/copy.svg"
+          alt="Copiar"
+          onclick="copyPassword()"
+          title="Copiar"
+        />
+    </div>
+      </div>
+      <button onclick="createPass()">
+        <img src="/assets/generator.svg" alt="Generar" />Generar Contraseña
+      </button>
+      <p id="message" class="mensajeCopiar">
+        Si te pareció correcta la contraseña, dale en copiar para poder usarla.
+      </p>
+      <div id="popup" class="popup">¡Contraseña copiada al portapapeles!
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
